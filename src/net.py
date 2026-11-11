@@ -1,6 +1,6 @@
 def parse_port(value):
     """Parse a port number or a known service alias."""
-    aliases = {}
+    aliases = {"http": 80}
     if value in aliases:
         return aliases[value]
     port = int(value)
